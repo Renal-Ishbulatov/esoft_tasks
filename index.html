@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Дом</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+    margin: 0;
+  }
+  .house-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .house-base {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 180px;
+    background-color: #A0522D;
+    border: 2px solid #000;
+  }
+  .roof {
+    position: absolute;
+    bottom: 180px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 100px solid #B22222;
+  }
+  .window {
+    position: absolute;
+    bottom: 80px;
+    left: 110px;
+    width: 80px;
+    height: 80px;
+    background-color: #ADD8E6;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+  .chimney {
+    position: absolute;
+    bottom: 230px;
+    right: 40px;
+    width: 30px;
+    height: 60px;
+    background-color: #8B4513;
+    border: 2px solid #000;
+  }
+  .door {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 60px;
+    height: 100px;
+    background-color: #5C4033;
+    border: 2px solid #000;
+    border-radius: 5px 5px 0 0;
+  }
+</style>
+</head>
+<body>
+  <div class="house-container">
+    <div class="chimney"></div>
+    <div class="roof"></div>
+    <div class="house-base">
+      <div class="window"></div>
+      <div class="door"></div>
+    </div>
+  </div>
+</body>
+</html>
